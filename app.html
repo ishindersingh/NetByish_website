@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetByish</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #7300e1; /* Updated background color */
+      color: white;
+      text-align: center;
+    }
+
+    .welcome-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100px; /* Adjust size as needed */
+      margin-right: 10px; /* Space between logo and text */
+    }
+
+    .welcome-text {
+      color: black; /* Black text color for welcome message */
+      font-size: 4rem;
+      font-style: bold;
+    }
+
+    h1 {
+      color: black; 
+      font-size: 4rem;
+      margin-bottom: 15px;
+    }
+    h2 {
+      color: black; 
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    /* Button styling */
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      font-size: 1rem;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Mobile-friendly adjustments */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      button {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+      }
+
+      .welcome-text {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <img src="NetByish.svg" alt="NetByish Logo">
+    <div class="welcome-text"><h1>Welcome to NetByish</h1></div>
+  </div>
+  <a href="https://pcmirror.cc/home" target="_blank">
+    <button>Get NetByish</button>
+  </a>
+  <p>Press <strong>F</strong> to enter or exit the full screen mode.</p>
+  <div><h2>Your gateway to the ultimate internet experience!</h2><div></div>
+</body>
+</html>
