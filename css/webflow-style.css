@@ -2668,41 +2668,7 @@ blockquote {
   font-size: 1vw;
   display: flex;
 }
-.button-2 {
-  position: relative;
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background:#000000;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-}
 
-.button-2:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(255, 0, 170, 0.8);
-}
-
-
-.button-2:hover::before {
-  opacity: 1;
-  animation: shine 1.5s linear infinite;
-}
-
-@keyframes shine {
-  0% {
-      transform: rotate(45deg) translateX(-200%);
-  }
-  100% {
-      transform: rotate(45deg) translateX(200%);
-  }
-}
 .social-icon {
   background-image: radial-gradient(circle closest-side at 50% 50%, var(--primary-51\<deleted\|variable-22ba2fd1-e1c9-c606-a5a2-3447eb771393\>) 80%, var(--black-2\<deleted\|variable-e99a3d83-d809-4a12-b259-6cad688e1b34\>) 90%);
   object-fit: cover;
