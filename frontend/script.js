@@ -52,7 +52,7 @@ async function sendMessage() {
         const typingIndicator = addTypingIndicator();
 
         // API call
-        const response = await fetch('https://ishinderss-ai.onrender.com:10000', {
+        const response = await fetch('https://ishinderss-ai.onrender.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ messages: conversationHistory })
