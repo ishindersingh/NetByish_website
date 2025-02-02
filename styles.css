@@ -1,6 +1,6 @@
 /* Update your CSS with these styles */
 :root {
-    --purple-primary: #7300e1;
+    --purple-primary: #8a2be2;
     --purple-secondary:#7300e1;
     --background-dark: #0a0a0a;
     --background-light: #7300e1;
@@ -16,7 +16,6 @@ body {
 }
 
 .chat-container {
-    max-width: 1200px;
     margin: 0 auto;
     height: 100vh;
     display: flex;
@@ -27,15 +26,14 @@ body {
 .chat-box {
     flex: 1;
     overflow-y: auto;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
 .message {
-    max-width: 70%;
-    padding: 1.25rem;
+    padding: 1rem;
     border-radius: 1rem;
     position: relative;
     display: flex;
