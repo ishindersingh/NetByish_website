@@ -1,0 +1,150 @@
+/* Update your CSS with these styles */
+:root {
+    --purple-primary: #7300e1;
+    --purple-secondary:#7300e1;
+    --background-dark: #0a0a0a;
+    --background-light: #7300e1;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+}
+
+body {
+    background-color: var(--background-dark);
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.chat-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-dark);
+}
+
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.message {
+    max-width: 70%;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.user-message {
+    background: var(--purple-primary);
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.ai-message {
+    background: var(--background-light);
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.message-content {
+    flex: 1;
+}
+
+.message pre {
+    background: #000000 !important;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.message code {
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+}
+
+.input-container {
+    position: relative;
+    padding: 1.5rem;
+    background: var(--background-light);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-top: 1px solid #333333;
+}
+
+#user-input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    background: #2a2a2a;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+#user-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--purple-primary);
+}
+
+.send-button {
+    background: var(--purple-primary);
+    border: none;
+    padding: 0.75rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-button:hover {
+    background: var(--purple-secondary);
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.icon-button:hover {
+    color: var(--purple-primary);
+}
+
+.uploaded-image {
+    max-width: 300px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.uploaded-image:hover {
+    transform: scale(1.02);
+}
+
+/* Add prism.js theme modifications */
+.token.keyword { color: #ff79c6; }
+.token.string { color: #f1fa8c; }
+.token.function { color: #50fa7b; }
+.token.comment { color: #6272a4; }
