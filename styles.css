@@ -1,26 +1,49 @@
-/* Update your CSS with these styles */
 :root {
-    --purple-primary: #8a2be2;
-    --purple-secondary:#7300e1;
-    --background-dark: #0a0a0a;
-    --background-light: #7300e1;
+    --purple-primary: #9b3df4;
+    --purple-secondary: #8a2be2;
+    --background-dark: #1e1e1e;
+    --background-light: #272727;
     --text-primary: #ffffff;
-    --text-secondary: #cccccc;
+    --text-secondary: #b3b3b3;
 }
 
 body {
     background-color: var(--background-dark);
-    height: 100vh;
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
 }
 
+/* Brand Section */
+.brand {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.headline {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: monospace;
+    color: var(--text-primary);
+}
+
+/* Chat Container */
 .chat-container {
-    margin: 0 auto;
-    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background: var(--background-dark);
+    height: 100%;
 }
 
 .chat-box {
@@ -32,10 +55,10 @@ body {
     gap: 1.5rem;
 }
 
+/* Message Styling */
 .message {
     padding: 1rem;
     border-radius: 1rem;
-    position: relative;
     display: flex;
     gap: 1rem;
     animation: fadeIn 0.3s ease-in;
@@ -53,7 +76,7 @@ body {
 }
 
 .ai-message {
-    background: var(--background-light);
+    background: var(--purple-secondary);
     align-self: flex-start;
     border-bottom-left-radius: 4px;
 }
@@ -75,20 +98,22 @@ body {
     font-size: 14px;
 }
 
+/* Input Section */
 .input-container {
     position: relative;
-    padding: 1.5rem;
+    padding: 1rem;
     background: var(--background-light);
     display: flex;
     gap: 1rem;
     align-items: center;
     border-top: 1px solid #333333;
+    width: 100%;
 }
 
 #user-input {
     flex: 1;
-    padding: 1rem 1.5rem;
-    border-radius: 2rem;
+    padding: 0.9rem 1.2rem;
+    border-radius: 25px;
     border: none;
     background: #2a2a2a;
     color: var(--text-primary);

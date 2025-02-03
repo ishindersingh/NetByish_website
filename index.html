@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="brand">
+        <h1 class="headline">Welcome To Isinder's AI</h1>
+    </div>
+    
     <div class="chat-container">
         <div id="chat-box" class="chat-box"></div>
         <div class="input-container">
@@ -21,7 +25,7 @@
                     </svg>
                 </button>
             </div>
-            <input type="text" id="user-input" placeholder="Message AI Chat..." autocomplete="off">
+            <input type="text" id="user-input" placeholder="Das ki kaha Ai nu..." autocomplete="off">
             <button class="send-button" onclick="sendMessage()">
                 <svg viewBox="0 0 24 24" width="24" height="24" class="send-icon">
                     <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
@@ -29,6 +33,7 @@
             </button>
         </div>
     </div>
+
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
