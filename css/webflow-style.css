@@ -2316,7 +2316,8 @@ img {
   border-radius: 99px;
   justify-content: center;
   align-items: center;
-  height: 52px;
+  width: auto;
+  height: auto;
   padding: 15px 30px;
   font-size: 18px;
   font-weight: 500;
